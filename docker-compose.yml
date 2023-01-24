@@ -24,3 +24,7 @@ services:
         - ~/Downloads/media/:/config
         - ~/Downloads/media/series:/tv
         - ~/Downloads/media/movies:/movies
+    filestash:
+        image: machines/filestash
+        ports:
+        - 8334:8334
