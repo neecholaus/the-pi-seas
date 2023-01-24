@@ -2,6 +2,6 @@ services:
     plex-server:
         volumes:
         - ~/Downloads/media/:/config
-    filestash:
+    filebrowser:
         volumes:
-        - ~/Downloads/media:/the-pi-sea
+        - ~/Downloads/media:/srv
