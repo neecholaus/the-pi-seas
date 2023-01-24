@@ -20,10 +20,6 @@ services:
         - 32414:32414/udp
         - 32469:32469
         restart: unless-stopped
-        volumes:
-        - ~/Downloads/media/:/config
-        - ~/Downloads/media/series:/tv
-        - ~/Downloads/media/movies:/movies
     filestash:
         image: machines/filestash
         ports:

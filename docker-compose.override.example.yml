@@ -1,0 +1,7 @@
+services:
+    plex-server:
+        volumes:
+        - ~/Downloads/media/:/config
+    filestash:
+        volumes:
+        - ~/Downloads/media:/the-pi-sea
