@@ -20,7 +20,7 @@ services:
         - 32414:32414/udp
         - 32469:32469
         restart: unless-stopped
-    filestash:
-        image: machines/filestash
+    filebrowser:
+        image: filebrowser/filebrowser
         ports:
-        - 8334:8334
+        - 8800:80
