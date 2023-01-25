@@ -1,7 +1,8 @@
 services:
     plex-server:
         volumes:
-        - ~/Downloads/media/:/config
+        - ~/Downloads/media/plex/config:/config
+        - ~/Downloads/media/:/plex-libraries
     filebrowser:
         volumes:
         - ~/Downloads/media:/srv
@@ -11,6 +12,6 @@ services:
         - SERVER_CITIES=
     transmission:
         volumes:
-        - ~/Downloads/media/downloads:/downloads
-        - ~/Downloads/media/watch:/watch
-        - ~/Downloads/media/config:/config
+        - ~/Downloads/media/transmission/downloads:/downloads
+        - ~/Downloads/media/transmission/watch:/watch
+        - ~/Downloads/media/transmission/config:/config

@@ -23,7 +23,7 @@ services:
     filebrowser:
         image: filebrowser/filebrowser
         ports:
-        - 8800:80
+        - 8080:80
     vpn:
         image: qmcgaw/gluetun
         container_name: vpn
