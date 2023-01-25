@@ -24,3 +24,17 @@ services:
         image: filebrowser/filebrowser
         ports:
         - 8800:80
+    vpn:
+        image: qmcgaw/gluetun
+        container_name: vpn
+        cap_add:
+        - NET_ADMIN
+        environment:
+        - VPN_SERVICE_PROVIDER=mullvad
+        - VPN_TYPE=openvpn
+        - FIREWALL_INPUT_PORTS=9091 # transmission ui
+        ports:
+        - 9091:9091 # transmission ui
+    transmission:
+        image: linuxserver/transmission:arm64v8-latest
+        network_mode: "service:vpn"

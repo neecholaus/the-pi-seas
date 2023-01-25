@@ -5,3 +5,12 @@ services:
     filebrowser:
         volumes:
         - ~/Downloads/media:/srv
+    vpn:
+        environment:
+        - OPENVPN_USER=
+        - SERVER_CITIES=
+    transmission:
+        volumes:
+        - ~/Downloads/media/downloads:/downloads
+        - ~/Downloads/media/watch:/watch
+        - ~/Downloads/media/config:/config
