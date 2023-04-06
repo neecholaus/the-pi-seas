@@ -1,5 +1,4 @@
 # the-pi-seas :anchor:
-The idea behind this docker composition is to spin it up on a raspberry pi, and have a method for acquiring
 
 ## What does each container do?
 #### `plex-media-server`
